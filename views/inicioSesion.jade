@@ -1,0 +1,12 @@
+extends layout
+block content
+	h1.
+		#{title}
+	form#formAgregarPersona(name="agregarPersona", method= "post",action="/inicioSesion")
+		p Usuario:
+				input#inputNombre(type="text", placeholder="Ejem. Ricardo", name="nomUsu")
+		p Contraseña:
+				input#inputApellido(type="text", placeholder="Ejem. Torrez", name="pass")
+		
+		p
+			button#btnEnviar(type="submit") Guardar
